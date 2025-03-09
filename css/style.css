@@ -1,0 +1,91 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar li:not(:last-child) a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    color: var(--green-color) !important;
+}
+
+.menu {
+    color: white;
+    border-color: white !important;
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.search {
+    color: var(--green-color) !important;
+    font-weight: bold;
+    border-left: 2px solid var(--green-color);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.landing {
+    min-height: calc(100dvh - 70px);
+    background-color: var(--dark-color);
+}
+
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+}
+
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
